@@ -9,12 +9,12 @@ import java.net.Socket;
 import javax.swing.JOptionPane;
 
 public class EchoTCPServer {
-	public static final int PORT = 3400;
+	public static final int PORT = 3401;
 	private ServerSocket listener;
 	private Socket serverSideSocket;
 	private PrintWriter toNetwork;
 	private BufferedReader fromNetwork;
-        private PrincipalServidor serv;
+    private PrincipalServidor serv;
         
 	public EchoTCPServer(PrincipalServidor ps) {
                 serv = ps;
@@ -49,57 +49,6 @@ public class EchoTCPServer {
                           cla = resul[2];
                           if (serv.buscarUsuario(log,cla)==true)
                               respuesta = "ok";
-                          break;   
-                          
-                    
-                case "2": respuesta= serv.buscarCuenta(resul[1]);
-                          break;
-                          
-                case "3": respuesta= serv.buscarCuenta(resul[1]);
-                          if (respuesta!="")
-                          {
-                              String cuen[] = respuesta.split(";");
-                              s = Double.parseDouble(cuen[2])+Double.parseDouble(resul[2]);
-                              respuesta = serv.actualizarSaldoCuenta(resul[1],s);
-                          }
-                          else
-                          {
-                              respuesta="";
-                          }
-                          break;   
-                
-                case "4": respuesta= serv.buscarCuenta(resul[1]);
-                          if (respuesta!="")
-                          {
-                              String cuen[] = respuesta.split(";");
-                              s = Double.parseDouble(cuen[2])-Double.parseDouble(resul[2]);
-                              respuesta = serv.actualizarSaldoCuenta(resul[1],s);
-                          }
-                          else
-                          {
-                              respuesta="";
-                          }
-                          break;
-                 
-                case "5": respuesta= serv.buscarCuenta(resul[1]);
-                          respuesta1 = serv.buscarCuenta(resul[2]);
-                          if (respuesta!="" && respuesta1!="")
-                          {
-                              String cuen[] = respuesta.split(";");
-                              s = Double.parseDouble(cuen[2])-Double.parseDouble(resul[3]);
-                              String resp = serv.actualizarSaldoCuenta(resul[1],s);
-                              
-                              String cuen1[]=respuesta1.split(";");
-                              s = Double.parseDouble(cuen1[2])+Double.parseDouble(resul[3]);
-                              respuesta1 = serv.actualizarSaldoCuenta(resul[2],s);
-                              
-                              respuesta ="Nuevos datos cuenta origen: " + resp + 
-                                         "Nuevos datos cuenta destino: "+respuesta1;
-                          }
-                          else
-                          {
-                              respuesta="";
-                          }
                           break;
                           
             }

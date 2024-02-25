@@ -1,32 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bd5a7477-41f9-4471-ab27-cf0e02c6aa59" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProyectoInfraestructura.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente/EchoTCPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente/PrincipalCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/ClienteCuenta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/Cuenta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/EchoTCPServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/PrincipalServidor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servidor/model/Estudiante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servidor/model/Materia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servidor/model/Profesion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servidor/model/RegistroMateria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servidor/model/Universidad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servidor/persistence/ArchivoUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servidor/persistence/Persistencia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servidor/resources/Rutas.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servidor/resources/Universidad.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cliente/EchoTCPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente/EchoTCPClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cliente/PrincipalCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente/PrincipalCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servidor/ClienteCuenta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servidor/Cuenta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servidor/EchoTCPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Servidor/EchoTCPServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servidor/PrincipalServidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Servidor/PrincipalServidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servidor/Usuario.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2cpNLWzdglUeHV1SBWM5gRVRAx2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -37,11 +53,21 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Servidor/Persistence" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,10 +77,122 @@
       <option name="presentableId" value="Default" />
       <updated>1708804504732</updated>
       <workItem from="1708804505818" duration="334000" />
+      <workItem from="1708812952206" duration="6679000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17.0.2" class="java.beans.XMLDecoder">
+ <object class="Servidor.model.Universidad">
+  <void property="estudiantes">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="Servidor.model.Estudiante">
+      <void property="codigo">
+       <string>1E</string>
+      </void>
+      <void property="codigoProfesion">
+       <string>1</string>
+      </void>
+      <void property="contrasenia">
+       <string>1234</string>
+      </void>
+      <void property="semestre">
+       <int>7</int>
+      </void>
+      <void property="usuario">
+       <string>mariana</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="materias">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="Servidor.model.Materia">
+      <void property="codigo">
+       <string>1M</string>
+      </void>
+      <void property="creditos">
+       <int>4</int>
+      </void>
+      <void property="nombre">
+       <string>Programación</string>
+      </void>
+      <void property="valor">
+       <float>100000.0</float>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="profesiones">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="Servidor.model.Profesion">
+      <void property="codigo">
+       <string>1P</string>
+      </void>
+      <void property="idMaterias">
+       <object class="java.util.ArrayList" id="ArrayList0">
+        <void method="add">
+         <string>M1</string>
+        </void>
+       </object>
+      </void>
+      <void property="nombre">
+       <string>Ingeniería</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="registrosMaterias">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="Servidor.model.RegistroMateria">
+      <void property="codigo">
+       <string>1R</string>
+      </void>
+      <void property="codigoEstudiante">
+       <string>1E</string>
+      </void>
+      <void property="listaMaterias">
+       <object idref="ArrayList0"/>
+      </void>
+      <void property="semestre">
+       <int>7</int>
+      </void>
+      <void property="valorTotal">
+       <float>100000.0</float>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
