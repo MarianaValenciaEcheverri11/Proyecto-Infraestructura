@@ -63,8 +63,10 @@ public class PrincipalServidor {
 
         universidad.setProfesiones(profesiones);
 
+        ArrayList<String> idMateriasEstudiante = new ArrayList<String>();
+        idMateriasEstudiante.add("1M");
         ArrayList<RegistroMateria> registrosMaterias = new ArrayList<RegistroMateria>();
-        registrosMaterias.add(new RegistroMateria("1ER", "1E", idMaterias, 7,
+        registrosMaterias.add(new RegistroMateria("1ER", "1E", idMateriasEstudiante, 7,
                 LocalDateTime.now(), 100000.00F));
 
         universidad.setRegistrosMaterias(registrosMaterias);
@@ -132,10 +134,9 @@ public class PrincipalServidor {
             guardarResourceXML();
         }
         if (tieneDuplicados(codigoUsuario,idMaterias.split(","))) {
-            return "No se puede inscribir";
+            return "No se puede inscribir porque ya registró esa materia";
         }
 
-        String respuesta="";
         String[] materias = idMaterias.split(",");
         int creditos = 0;
         for(int i=0; i<materias.length; i++) {
@@ -146,7 +147,7 @@ public class PrincipalServidor {
             }
         }
         if (creditos>=10 && creditos<=15) {
-
+            float costoTotalMatricula = 0;
             ArrayList<String> list = new ArrayList<String>(Arrays.asList(idMaterias.split(",")));
             RegistroMateria registroMateria = new RegistroMateria( codigoUsuario+"R", codigoUsuario, list, 7, LocalDateTime.now(), 100000.00F);
 
@@ -154,12 +155,19 @@ public class PrincipalServidor {
 
             Persistencia.guardarRecursoUniversidad(universidad);
 
-            respuesta = "Inscripción exitosa";
+            for(int j=0; j<registroMateria.getListaMaterias().size(); j++) {
+                float valorMateria = 0;
+                for(int i=0; i<universidad.getMaterias().size(); i++) {
+                    if (registroMateria.getListaMaterias().get(j).equals(universidad.getMaterias().get(i).getCodigo())) {
+                        valorMateria = universidad.getMaterias().get(i).getValor();
+                    }
+                }
+                costoTotalMatricula = costoTotalMatricula + valorMateria;
+            }
+            return "Inscripción exitosa!, el costo de su matrícula es:  " + costoTotalMatricula;
         } else {
-            respuesta = "No se puede inscribir";
+            return "No se puede inscribir por la cantidad de créditos, deben ser mínimo 10 y máximo 15";
         }
-        return respuesta;
-
     }
 
     public boolean tieneDuplicados(String codigoUsuario, String[] array) {
@@ -167,7 +175,7 @@ public class PrincipalServidor {
         boolean duplicado = false;
 
         for(int i=0; i < universidad.getRegistrosMaterias().size(); i++) {
-            if( universidad.getRegistrosMaterias().get(i).getListaMaterias() != null && universidad.getRegistrosMaterias().get(i).getCodigoEstudiante().equals(codigoUsuario) ) {
+            if(universidad.getRegistrosMaterias().get(i).getListaMaterias() != null && universidad.getRegistrosMaterias().get(i).getCodigoEstudiante().equals(codigoUsuario) ) {
                 for(int j=0; j<array.length; j++) {
                     if (universidad.getRegistrosMaterias().get(i).getListaMaterias().contains(array[j])) {
                         duplicado = true;

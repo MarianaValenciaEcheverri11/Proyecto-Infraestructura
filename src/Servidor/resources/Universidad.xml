@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="17.0.8.1" class="java.beans.XMLDecoder">
+<java version="17.0.2" class="java.beans.XMLDecoder">
  <object class="Servidor.model.Universidad">
   <void property="estudiantes">
    <object class="java.util.ArrayList">
@@ -228,6 +228,13 @@
       <void property="codigoEstudiante">
        <string>1E</string>
       </void>
+      <void property="listaMaterias">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>1M</string>
+        </void>
+       </object>
+      </void>
       <void property="semestre">
        <int>7</int>
       </void>
@@ -247,13 +254,13 @@
       <void property="listaMaterias">
        <object class="java.util.ArrayList">
         <void method="add">
-         <string>1M</string>
-        </void>
-        <void method="add">
          <string>2M</string>
         </void>
         <void method="add">
          <string>3M</string>
+        </void>
+        <void method="add">
+         <string>6M</string>
         </void>
        </object>
       </void>
