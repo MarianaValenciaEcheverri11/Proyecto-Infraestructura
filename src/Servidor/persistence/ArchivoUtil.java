@@ -175,9 +175,6 @@ public  class ArchivoUtil {
         }
     }
 
-
-
-
     public static Object cargarRecursoSerializadoXML(String rutaArchivo) throws IOException {
         XMLDecoder decodificadorXML;
         Object objetoXML;
@@ -186,7 +183,6 @@ public  class ArchivoUtil {
         decodificadorXML.close();
         return objetoXML;
     }
-
     public static void salvarRecursoSerializadoXML(String rutaArchivo, Object objeto) throws IOException {
         XMLEncoder codificadorXML;
         codificadorXML = new XMLEncoder(new FileOutputStream(rutaArchivo));

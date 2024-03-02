@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="17.0.2" class="java.beans.XMLDecoder">
+<java version="17.0.8.1" class="java.beans.XMLDecoder">
  <object class="Servidor.model.Universidad">
   <void property="estudiantes">
    <object class="java.util.ArrayList">
@@ -9,7 +9,7 @@
        <string>1E</string>
       </void>
       <void property="codigoProfesion">
-       <string>1</string>
+       <string>1P</string>
       </void>
       <void property="contrasenia">
        <string>1234</string>
@@ -18,7 +18,7 @@
        <int>7</int>
       </void>
       <void property="usuario">
-       <string>mariana</string>
+       <string>m</string>
       </void>
      </object>
     </void>
@@ -42,6 +42,150 @@
       </void>
      </object>
     </void>
+    <void method="add">
+     <object class="Servidor.model.Materia">
+      <void property="codigo">
+       <string>2M</string>
+      </void>
+      <void property="creditos">
+       <int>4</int>
+      </void>
+      <void property="nombre">
+       <string>Matemáticas</string>
+      </void>
+      <void property="valor">
+       <float>100000.0</float>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Servidor.model.Materia">
+      <void property="codigo">
+       <string>3M</string>
+      </void>
+      <void property="creditos">
+       <int>4</int>
+      </void>
+      <void property="nombre">
+       <string>Física</string>
+      </void>
+      <void property="valor">
+       <float>100000.0</float>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Servidor.model.Materia">
+      <void property="codigo">
+       <string>4M</string>
+      </void>
+      <void property="creditos">
+       <int>4</int>
+      </void>
+      <void property="nombre">
+       <string>Química</string>
+      </void>
+      <void property="valor">
+       <float>100000.0</float>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Servidor.model.Materia">
+      <void property="codigo">
+       <string>5M</string>
+      </void>
+      <void property="creditos">
+       <int>4</int>
+      </void>
+      <void property="nombre">
+       <string>Biología</string>
+      </void>
+      <void property="valor">
+       <float>100000.0</float>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Servidor.model.Materia">
+      <void property="codigo">
+       <string>6M</string>
+      </void>
+      <void property="creditos">
+       <int>4</int>
+      </void>
+      <void property="nombre">
+       <string>Inglés</string>
+      </void>
+      <void property="valor">
+       <float>100000.0</float>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Servidor.model.Materia">
+      <void property="codigo">
+       <string>7M</string>
+      </void>
+      <void property="creditos">
+       <int>4</int>
+      </void>
+      <void property="nombre">
+       <string>Español</string>
+      </void>
+      <void property="valor">
+       <float>100000.0</float>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Servidor.model.Materia">
+      <void property="codigo">
+       <string>8M</string>
+      </void>
+      <void property="creditos">
+       <int>4</int>
+      </void>
+      <void property="nombre">
+       <string>Historia</string>
+      </void>
+      <void property="valor">
+       <float>100000.0</float>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Servidor.model.Materia">
+      <void property="codigo">
+       <string>9M</string>
+      </void>
+      <void property="creditos">
+       <int>4</int>
+      </void>
+      <void property="nombre">
+       <string>Geografía</string>
+      </void>
+      <void property="valor">
+       <float>100000.0</float>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Servidor.model.Materia">
+      <void property="codigo">
+       <string>10M</string>
+      </void>
+      <void property="creditos">
+       <int>4</int>
+      </void>
+      <void property="nombre">
+       <string>Educación Física</string>
+      </void>
+      <void property="valor">
+       <float>100000.0</float>
+      </void>
+     </object>
+    </void>
    </object>
   </void>
   <void property="profesiones">
@@ -52,9 +196,18 @@
        <string>1P</string>
       </void>
       <void property="idMaterias">
-       <object class="java.util.ArrayList" id="ArrayList0">
+       <object class="java.util.ArrayList">
         <void method="add">
-         <string>M1</string>
+         <string>1M</string>
+        </void>
+        <void method="add">
+         <string>2M</string>
+        </void>
+        <void method="add">
+         <string>3M</string>
+        </void>
+        <void method="add">
+         <string>6M</string>
         </void>
        </object>
       </void>
@@ -70,13 +223,39 @@
     <void method="add">
      <object class="Servidor.model.RegistroMateria">
       <void property="codigo">
-       <string>1R</string>
+       <string>1ER</string>
+      </void>
+      <void property="codigoEstudiante">
+       <string>1E</string>
+      </void>
+      <void property="semestre">
+       <int>7</int>
+      </void>
+      <void property="valorTotal">
+       <float>100000.0</float>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Servidor.model.RegistroMateria">
+      <void property="codigo">
+       <string>1ER</string>
       </void>
       <void property="codigoEstudiante">
        <string>1E</string>
       </void>
       <void property="listaMaterias">
-       <object idref="ArrayList0"/>
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>1M</string>
+        </void>
+        <void method="add">
+         <string>2M</string>
+        </void>
+        <void method="add">
+         <string>3M</string>
+        </void>
+       </object>
       </void>
       <void property="semestre">
        <int>7</int>

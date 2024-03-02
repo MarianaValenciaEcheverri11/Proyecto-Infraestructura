@@ -30,13 +30,11 @@ public class EchoTCPClient {
                 protocol(clientSideSocket);
 	}
         
-	public void enviarMensaje(String cadena) throws IOException
-	{
+	public void enviarMensaje(String cadena) throws IOException {
 		toNetwork.println(cadena);
 	}
 
-	public String leerMensaje() throws IOException
-	{
+	public String leerMensaje() throws IOException {
 		String fromServer = fromNetwork.readLine();
 		return fromServer;
 	}

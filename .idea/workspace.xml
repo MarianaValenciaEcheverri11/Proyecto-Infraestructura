@@ -5,25 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd5a7477-41f9-4471-ab27-cf0e02c6aa59" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/model/Estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/model/Materia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/model/Profesion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/model/RegistroMateria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/model/Universidad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/persistence/ArchivoUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/persistence/Persistencia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/resources/Rutas.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/resources/Universidad.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cliente/helpers/ConvertirMensajes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cliente/model/Materia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cliente/model/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cliente/EchoTCPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente/EchoTCPClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cliente/PrincipalCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente/PrincipalCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Servidor/ClienteCuenta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Servidor/Cuenta.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Servidor/EchoTCPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Servidor/EchoTCPServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Servidor/PrincipalServidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Servidor/PrincipalServidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Servidor/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servidor/persistence/ArchivoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Servidor/persistence/ArchivoUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servidor/resources/Universidad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Servidor/resources/Universidad.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,24 +40,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Drogueria&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Servidor/Persistence" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.PrincipalCliente">
+    <configuration name="PrincipalCliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cliente.PrincipalCliente" />
+      <module name="ProyectoInfraestructura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Cliente.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrincipalServidor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Servidor.PrincipalServidor" />
+      <module name="ProyectoInfraestructura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Servidor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PrincipalCliente" />
+        <item itemvalue="Application.PrincipalServidor" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,115 +111,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Servidor/PrincipalServidor.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Proyecto_Infraestructura$PrincipalCliente.ic" NAME="PrincipalCliente Coverage Results" MODIFIED="1709396318562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Cliente.*</FILTER>
+    </SUITE>
   </component>
 </project>
