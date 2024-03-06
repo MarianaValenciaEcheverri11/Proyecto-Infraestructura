@@ -1,6 +1,9 @@
 package Cliente;
 
 import Cliente.model.Usuario;
+import Servidor.model.Estudiante;
+import Servidor.model.Materia;
+import Servidor.model.Universidad;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,6 +13,8 @@ public class PrincipalCliente {
     private EchoTCPClient cliente;
     boolean logueado=false;
     Usuario usuario;
+
+    Universidad universidad;
 
     ArrayList<String> materias = new ArrayList<String>();
 
@@ -40,7 +45,7 @@ public class PrincipalCliente {
                    cla = JOptionPane.showInputDialog("Ingrese su contraseña: ", "1234");
                    cliente.enviarMensaje(opc+";"+log+";"+cla);
                    respuesta = cliente.leerMensaje();
-                   if (respuesta != null) {
+                   if (respuesta != null && !respuesta.isEmpty() && !respuesta.equals("null")) {
                        String[] listaUsuario = respuesta.split(";");
                        logueado=true;
                        JOptionPane.showMessageDialog(null, "Bienvenido " + log);
@@ -93,6 +98,23 @@ public class PrincipalCliente {
                    }
                    break;
                case 2:
+                   if (logueado) {
+                       cliente.enviarMensaje((opc+2) + ";" + usuario.getCodigo());
+                       respuesta = cliente.leerMensaje();
+
+                       String[] materiasSeparadas = respuesta.split(":");
+
+                       for (int i = 0; i < materiasSeparadas.length; i++) {
+                           String[] materia = materiasSeparadas[i].split(";");
+                           materias.add(materia[0]);
+                           listaMaterias += "Codigo: " + materia[0] + " CodigoEstudiante: " + materia[1] + " ListaMaterias: " + materia[2] + " Semestre: " + materia[3] + " Fecha: " + materia[4] + "ValorTotal"+ materia[5] +"\n";
+                       }
+
+                       JOptionPane.showMessageDialog(null, listaMaterias);
+
+                   } else {
+                       JOptionPane.showMessageDialog(null, "Debe ingresar primero");
+                   }
                    break;
            }
 

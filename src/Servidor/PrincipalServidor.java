@@ -98,6 +98,8 @@ public class PrincipalServidor {
                         universidad.getEstudiantes().get(i).getCodigo() + ";" +
                         universidad.getEstudiantes().get(i).getSemestre() + ";" +
                         universidad.getEstudiantes().get(i).getCodigoProfesion();
+            }else{
+                return null;
             }
         }
         return usuario;
@@ -124,6 +126,29 @@ public class PrincipalServidor {
                 }
             }
         }
+        return respuesta;
+    }
+
+    //obtener las materias inscritas por un estudiante mediante el código del estudiante
+    public String obtenerMateriasEstudiante(String codigoEstudiante) {
+        cargarResourceXML();
+        if(universidad == null){
+            inicializarDatos();
+            guardarResourceXML();
+        }
+        String respuesta="";
+
+        for(int i=0; i<universidad.getRegistrosMaterias().size(); i++) {
+            if(universidad.getRegistrosMaterias().get(i).getCodigoEstudiante().equals(codigoEstudiante)){
+                respuesta += universidad.getRegistrosMaterias().get(i).getCodigo() + ";" +
+                        universidad.getRegistrosMaterias().get(i).getCodigoEstudiante() + ";" +
+                        universidad.getRegistrosMaterias().get(i).getListaMaterias() + ";" +
+                        universidad.getRegistrosMaterias().get(i).getSemestre() + ";" +
+                        universidad.getRegistrosMaterias().get(i).getFecha() + ";" +
+                        universidad.getRegistrosMaterias().get(i).getValorTotal() + ":";
+            }
+        }
+
         return respuesta;
     }
 

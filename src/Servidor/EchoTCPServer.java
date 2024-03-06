@@ -55,6 +55,9 @@ public class EchoTCPServer {
             case "3":
                 respuesta = serv.inscribirMaterias(resul[1], resul[2]);
                 break;
+            case "4":
+                respuesta = serv.obtenerMateriasEstudiante(resul[1]);
+                break;
         }
         return respuesta;
     }
