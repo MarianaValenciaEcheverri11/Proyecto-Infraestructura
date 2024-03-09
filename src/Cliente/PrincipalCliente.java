@@ -82,6 +82,8 @@ public class PrincipalCliente {
 
                        String[] materiasSeparadas = respuesta.split(":");
 
+                       listaMaterias = "";
+
                        for (int i = 0; i < materiasSeparadas.length; i++) {
                            String[] materia = materiasSeparadas[i].split(";");
                            materias.add(materia[0]);
@@ -103,6 +105,8 @@ public class PrincipalCliente {
                        respuesta = cliente.leerMensaje();
 
                        String[] materiasSeparadas = respuesta.split(":");
+
+                       listaMaterias = "";
 
                        for (int i = 0; i < materiasSeparadas.length; i++) {
                            String[] materia = materiasSeparadas[i].split(";");

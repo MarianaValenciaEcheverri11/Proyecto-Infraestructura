@@ -14,8 +14,8 @@ public class EchoTCPClient {
 	private BufferedReader fromNetwork;
 	private Socket clientSideSocket;
 	private static final Scanner SCANNER = new Scanner(System.in);
-	public static final String SERVER = "localhost";
-	public static final int PORT = 3401;
+	public static final String SERVER = "0.tcp.ngrok.io";
+	public static final int PORT = 14111;
     public Socket getClientSideSocket() {
         return clientSideSocket;
     }

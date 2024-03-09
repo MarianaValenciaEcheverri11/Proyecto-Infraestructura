@@ -9,7 +9,7 @@ import java.net.Socket;
 import javax.swing.JOptionPane;
 
 public class EchoTCPServer {
-	public static final int PORT = 3401;
+	public static final int PORT = 3400;
 	private ServerSocket listener;
 	private Socket serverSideSocket;
 	private PrintWriter toNetwork;
